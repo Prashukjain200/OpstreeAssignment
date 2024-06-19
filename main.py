@@ -20,7 +20,10 @@ class LinkedList:
     def printll(self):
         cur = self.head
         while cur:
-            print(cur.value, end='')
+            if cur.next == None:
+                print(cur.value)
+            else:
+                print(cur.value, end='->')
             cur = cur.next
 
     def convtonum(self):
